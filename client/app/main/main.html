@@ -1,20 +1,22 @@
-<div ng-app="myApp" ng-controller="MainCtrl" class="col-lg-8"> 
+<div ng-app="myApp" ng-controller="MainCtrl" class="col-lg-8 offset-2"> 
 
-<table class="table table-hover">
-  <tr>
-    <th>Customer ID</th>
-    <th>Customer Name</th>
-    <th>Customer Email</th>
-    <th>Subscription Term Name</th>
-    <th>Subscription Term ID</th>
-  </tr>
-  <tr ng-repeat="result in results">
-    <td>{{ result.customer.id }}</td>   
-    <td>{{ result.customer.first_name }} {{ result.customer.last_name }}</td>
-    <td>{{ result.customer.email }}</td>
-    <td>{{ result.term.name }}</td>
-    <td>{{ result.term.id }}</td>
-  </tr>
-</table>
+  <h2 class="white">My Open Subscriptions</h2>
+
+  <table class="table table-hover">
+    <tr>
+      <th>Customer ID</th>
+      <th>Customer Name</th>
+      <th>Customer Email</th>
+      <th>Subscription Term Name</th>
+      <th>Subscription Term ID</th>
+    </tr>
+    <tr ng-repeat="result in results">
+      <td>{{ result.customer.id }}</td>   
+      <td>{{ result.customer.first_name }} {{ result.customer.last_name }}</td>
+      <td>{{ result.customer.email }}</td>
+      <td>{{ result.term.name }}</td>
+      <td>{{ result.term.id }}</td>
+    </tr>
+  </table>
 
 </div>
