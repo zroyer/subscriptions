@@ -25,7 +25,6 @@ exports.index = function(req, res){
       res.json(body);
       console.log("got the body");
       console.log(body);
-
     });
   };
   var request = http.request(options, callback);
