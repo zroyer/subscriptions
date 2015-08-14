@@ -8,9 +8,11 @@ angular.module('subscriptionsApp')
  		.success(function(data) {
  			console.log(data)
  			$scope.results = data.results;
- 			console.log(data.results);
+ 			console.log($scope.results)
  		})
  		.error(function(data) {
  			console.log('Error' + data);
  		});
+
+
   });

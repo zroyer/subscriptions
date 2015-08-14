@@ -9,14 +9,15 @@
       <th>Customer Email</th>
       <th>Subscription Term Name</th>
       <th>Subscription Term ID</th>
+      <th>Status</th>
     </tr>
-    <tr ng-repeat="result in results">
+    <tr ng-model=results ng-repeat="result in results">
       <td>{{ result.customer.id }}</td>   
       <td>{{ result.customer.first_name }} {{ result.customer.last_name }}</td>
       <td>{{ result.customer.email }}</td>
       <td>{{ result.term.name }}</td>
       <td>{{ result.term.id }}</td>
+      <td>{{ result.status }}</td>
     </tr>
   </table>
-
 </div>
