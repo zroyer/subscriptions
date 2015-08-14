@@ -13,6 +13,4 @@ angular.module('subscriptionsApp')
  		.error(function(data) {
  			console.log('Error' + data);
  		});
-
-
   });
